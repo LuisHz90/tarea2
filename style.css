@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root{
+    --primary-color: #f4f4f4;
+    --background-color: #f8f9fa;
+    --dark-color: #343a40;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: "poppins", sans-serif;
+}
+
+*{
+    margin: 1px;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+
+/* Utilizades */
+.container{
+    max-width: 1200rem;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* header */
+.container-logo{
+    background-color: #7597ba;
+    display: flex;
+    align-items: center;
+    gap: 0-5rem;
+    padding: 1rem 0;
+    justify-content: space-between;
+}
+.container-logo h1 a{
+    display: flex;
+    align-items: center;
+    background: #e0e0e0;
+}
+
+.container-navbar{
+    background-color: #b1b8c0;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.menu{
+    display: flex;
+    gap: 5rem;
+    margin: auto;
+}
+
+.menu li{
+    list-style: none;
+}
+.menu a{
+    color: #584747;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text transform: uppercase;
+    position: relative;
+    gap: 0.5rem;
+}
+
+.menu a::after{
+    content: '';
+    width: 1.5rem;
+    height: 2px;
+    background-color: rgb(107, 107, 145);
+    position: absolute;
+    bottom: -3px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease;
+    
+}
+.menu a:hover::after{
+    opacity: 1;
+}
+.menu a:hover{
+    color: #2f0505;
+}
+.search-form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: #b29999;
+    height: 4.4rem;
+
+}
+.search-form input{
+    border: none;
+    outline: none;
+    background-color: #e4e6e8;
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem;
+    font-size: 1.6rem;
+    color: #9fafbf;
+
+}
+
+.banner{
+    background-image: linear-gradient(100deg, #000000, #00000020), url(Imágenes/musician-plays-bass-guitar-black-background-with-beam-light-emotional-play-music-concept_169016-4906.jpg);
+    height: 100rem;
+    background-size: cover;
+    background-position: center;
+    padding: 20rem 0;
+}
+.content-banner{
+    max-width: 120rem;
+    margin: auto;
+    padding: 80 rem 0; 
+}
+.content-banner p{
+    font-size: 10rem;
+    color: #ffffff;
+    margin-bottom: 20rem;
+    font-weight: 500rem;
+    padding: 0 2rem;
+}
+.content-banner h2{
+    font-size: 6rem;
+    color: #fff;
+    margin-bottom: 6rem;
+    font-weight: 500;
+    line-height: 1.1;
+    padding: 0 2rem;
+}
+.content-banner a{
+    background-color: #9cadc0;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all .3s ease;
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    border-radius: 3rem;
+}
+.Blog{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr;
+    grid-column-gap: 7px;
+    grid-row-gap: 0px;
+    padding: 2rem 0;
+
+}
+.Blog h3{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #4c4a4a;
+    margin-right: 2rem;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    border-radius: 3rem;
+}
+
+.Blog-categories{
+    display: flex;
+    justify-content: center;
+    height: 30rem;
+  
+}
+
+.Blog-categories p{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000;
+    margin-right: 2rem;
+}
+
+.Blog-categories a{
+    background-color: #9cadc0;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all .3s ease;
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    border-radius: 3rem;
+}
+.Blog-categories a:hover{
+    background-color: #2f0505;
+}
+.conocemas{
+    align-content: center;
+    height: 0rem;
+    padding: 50rem 2;
+
+}
+
+.footer{
+    background-color: #343a40;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer p{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: rgb(237, 237, 237);
+    }
+  }
+
+  .banner{
+    background-image: linear-gradient(100deg, #000000, #00000020), url(Imágenes/musician-plays-bass-guitar-black-background-with-beam-light-emotional-play-music-concept_169016-4906.jpg);
+    height: 100rem;
+    background-size: cover;
+    background-position: center;
+    padding: 20rem 0;
+}
+.content-banner{
+    max-width: 120rem;
+    margin: auto;
+    padding: 80 rem 0;
+}
+.content-banner p{
+    font-size: 6rem;
+    color: #ffffff;
+    margin-bottom: 10rem;
+    font-weight: 200rem;
+    padding: 0 2rem;
+}
+.content-banner h2{
+    font-size: 6rem;
+    color: #fff;
+    margin-bottom: 6rem;
+    font-weight: 500;
+    line-height: 1.1;
+    padding: 0 2rem;
+}
+.content-banner a{
+    background-color: #9cadc0;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all .3s ease;
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    border-radius: 3rem;
+}
+
+.Blog{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr;
+    grid-column-gap: 7px;
+    grid-row-gap: 0px;
+    padding: 2rem 0;
+
+}
+.Blog h3{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #4c4a4a;
+    margin-right: 2rem;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    border-radius: 3rem;
+}
+
+.Blog-categories{
+    display: flex;
+    justify-content: center;
+    height: 20rem;
+    
+
+  
+}
+
+.Blog-categories p{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000;
+    margin-right: 2rem;
+}
+
+.Blog-categories a{
+    background-color: #9cadc0;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all .3s ease;
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    border-radius: 3rem;
+}
+.Blog-categories a:hover{
+    background-color: #2f0505;
+}
